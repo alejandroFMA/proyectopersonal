@@ -1,18 +1,21 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Sans&family=Sofia+Sans+Condensed&family=Space+Mono&display=swap');
 
 :root{
-    --banner: #D66853;
+    --banner: #11151C ;
     --letras: #11151C;
    
 }
 
 *{
-font-family: Arial, Helvetica, sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 body{
-    background: rgb(171,217,12);
-    background: linear-gradient(210deg, rgba(171,217,12,1) 0%, rgba(31,129,172,1) 47%, rgba(31,172,159,1) 63%);
+    background:(144, 221, 240);
+    
     margin: auto;
     height: 20%;
     
@@ -55,7 +58,7 @@ color: white;
 
 }
 
-nav > ul > li > a {
+nav > ul > li a{
     text-decoration: none;
     color:white;
 }
@@ -63,7 +66,7 @@ nav > ul > li > a {
 
 a:hover{
     background-color: white;
-    color: #11151C;
+    color: black;
     
     
 }
@@ -83,18 +86,32 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align:justify;
 }
 
-.travelspace{
+.texto_img > img{
+    width: 150px;
+}
 
-    width: 400px;
-    height: 400px;
-   
+.texto_img > img:first-child{
 
+    width: 120px;
+}
 
+aside > img{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%
 
 }
 
+aside{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
 
 #newsletter > form{
     background-color: white;
@@ -113,18 +130,26 @@ a:hover{
 footer{
     display:flex;
     padding: 5px;
-   justify-content: center;
+    justify-content: center;
     font-size: 12px;
-    padding: 20px; ;
+    padding: 20px; 
+    font-weight: 700;
     
-    
+  
 }
 
 footer > ul > li{
     display:inline-flex;
-    text-align: right;
+    text-align: right;  
+    color: black;
+}
+
+footer > ul > li> a{
+    color: black;
+    text-decoration: none;
 
 }
+
 
 
 #apps{
@@ -136,17 +161,78 @@ footer > ul > li{
     
 /*Empieza biografia */
 
-#fotobio{
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url(../media/plane\ \(2\).jpg);
-    width: 100vw;
-    margin:0;
+#fotobio > img{
+width: 100%;
+height: 500px;
+object-fit: cover;
+object-position:center;
+
+    
 }
 
-#fotobio > h1{
-    font-size: 60px;
-    text-align: center;
+
+#fotobio > article > p{
+margin: 50px;
+font-size: 28px;
+
+
+
+}
+
+
+
+
+/* portfolio */
+
+#portfolio {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+flex-wrap: nowrap;
+margin: 20px;
+}
+
+
+
+#videos{
+margin: 20px;
+
+}
+
+video{
+    width: 20%;
+    border-radius: 5%;
+    
+    
+}
+
+
+#videos > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12); 
+    border-radius: 5%;
+   
+}
+
+
+#videos p {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5%;
+    margin: 15px;
+}
+
+audio{
+padding-top: 20px;
+
 }
 
 #destinos{
@@ -195,59 +281,6 @@ padding: 10px;
     padding: 50px;
 
 }
-
-/* portfolio */
-
-section {
-
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-section > h3 {
-    text-align: center;
-    font-size: 30px
-}
-
-
-#videos{
-margin: 10%;
-
-
-}
-
-video{
-    width: 70%;
-    height: 70% ;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
-    0 2px 2px rgba(0,0,0,0.12), 
-    0 4px 4px rgba(0,0,0,0.12), 
-    0 8px 8px rgba(0,0,0,0.12),
-    0 16px 16px rgba(0,0,0,0.12);
-    border-radius: 5%;
-}
-
-
-#videos > div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-   
-}
-
-
-#videos p {
-    padding: 20px;
-    background-color: white;
-    border-radius: 5%;
-    margin: 15px;
-}
-
-
-
-
 
 
 /* contacto */
@@ -308,6 +341,25 @@ nav ul{
        flex-direction: row;
 }
     
+
+#portada{
+display: flex;
+flex-direction: row;
+
+}
+
+#txt_portada{
+    width: 10%;
+}
+
+
+#newsletter{
+
+   width: 100%;
+   height: 100%;
+}
+
+
 #videos{
 
     display: flex;
@@ -316,9 +368,12 @@ nav ul{
 }
 
 #videos > div {
-
+    width: fit-content;
     flex-direction: row;
 }
+
+
+
 
 
 #contacto{
@@ -355,11 +410,15 @@ input[type="text"], textarea {
    
 .paseomars> p{
     margin-left: 20px;
+    margin-right: 90px;
     padding-right: 20px; 
 
 }
 
-
+audio{
+    padding-left: 800px
+    
+    }
 
     
     
