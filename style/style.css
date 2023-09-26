@@ -216,7 +216,6 @@ margin: 20px;
 }
 
 
-
 video {
     width: 60%;
     border-radius: 5%; 
@@ -240,65 +239,46 @@ video {
     font-size: large;
     
 }
+.duracion{
+    display: flex;
+    justify-content: center;
+}
 
-#destinos{
+    
+.destinos{
  
     display:flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 50px;
-    width: 70%;
-}
-
-.luna, .marte{
-
-    background-color: #11151C;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width:25rem;
-    min-width:18rem;
-    margin: 10px;
-    border-bottom: 1pc solid;
-   border-radius: 5%;
     
 }
 
-.luna, .marte p{
-text-align: justify;
-padding: 10px;
-color: #FFFDFA;
-
+.destinos>img{
+    padding-top: 50px;
+    width: 25%;
+    height: 25%; 
 }
 
-.planets
-{   height: 100px;
-    width: 100px;
-    max-height:25rem;
-    min-height:18rem;
-    max-width:25rem;
-    min-width:18rem;
-    padding: 50px;
-    
-}
 
-.precio{
 
+#tabla{
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-
 
 
 table {
 
-    width: 100%;
+    width: 40%;
+    border: 1px solid black;
     border-collapse:collapse;
     border-spacing: 15px;
-    border-radius: 15px;
+    border-radius: 20px;
     -moz-border-radius: 10px;
    -webkit-border-radius: 10px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
@@ -306,9 +286,8 @@ table {
     0 4px 4px rgba(0,0,0,0.12), 
     0 8px 8px rgba(0,0,0,0.12),
     0 16px 16px rgba(0,0,0,0.12);
-    width: 10%;
     border:2px solid #11151C;
-    margin: 10px;
+    
     
 }
 
@@ -322,8 +301,10 @@ color: lightcyan;
 th{
     text-align: center;
     background-color: var(--azul);
-    padding: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: #11151C;
+
 }
 
 
@@ -331,8 +312,8 @@ th{
 td{
    background-color: #FFFDFA;
     text-align: center;
-    padding: 20px;
     color: black;
+    border: 1px solid black;
  
   
 }
@@ -340,6 +321,7 @@ td{
 td li{
 list-style: none;
 text-align: center;
+padding: 3px;
 }
 
 
@@ -440,11 +422,11 @@ text-align: center;
 }
 
 input[type="text"], textarea {
-    background-color: #4bd5e6; 
+    background-color: #FFFDFA; 
     width: 100%;
 }
 input[type=text]:focus,input[type=email]:focus,textarea:focus {
-    background-color: #4bd5e6;
+    background-color: #FFFDFA;
 }
 
 
