@@ -440,8 +440,11 @@ text-align: center;
 }
 
 input[type="text"], textarea {
-    background-color: #d1d1d1; 
+    background-color: #4bd5e6; 
     width: 100%;
+}
+input[type=text]:focus,input[type=email]:focus,textarea:focus {
+    background-color: #4bd5e6;
 }
 
 
