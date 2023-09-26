@@ -59,20 +59,20 @@ nav > ul {
 nav > ul > li {
     font-size: 16px;
     padding: 20px;
-    color: #4bd5e6;
+   
 
 
 }
 
 nav > ul > li a{
     text-decoration: none;
-    color:var(--azul);
+    color: #4bd5e6
    
 }
 
 
 a:hover{
-    color:#FFFDFA;
+    color: #FFFDFA;
      
 }
 
@@ -178,6 +178,12 @@ footer > ul > li> a{
     text-decoration: none;
 
 }
+
+footer > ul > li> a:hover{
+color: #4bd5e6;    
+
+}
+
 
 
 
