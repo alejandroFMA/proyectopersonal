@@ -405,11 +405,13 @@ align-items: center;
 
 }
 
-.formu > form{
+#formucontacto{
     display: flex;
     flex-flow: column;
     background-color: #11151C;
     width: 90%;
+    align-items: baseline;
+
     
    
 }
@@ -422,8 +424,6 @@ align-items: center;
 
 .formu h4,p{
 text-align: center;
-
-
 
 }
 

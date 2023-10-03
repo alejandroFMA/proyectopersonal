@@ -33,18 +33,20 @@
     </article>
 
     <article class="formu">
-        <form action="/action_page.php"></form>
+        <form id="formucontacto">
             <label for="name"></label><br>
             <input type="text" placeholder="Nombre"id="fname" name="name">
-            <br><br>
+            <br>
             <label for="email"></label>
-            <input type="text" placeholder="Email" id="email" name="email">
-            <br><br>
+            <input type="text" placeholder="Email" id="email" id="email"name="mail">
+            <div>
             <input type="checkbox" id="infomercial" name="informercial" value="infomercial">
             <label for="infomercial"> Acepto recibir información comercial.</label>
-            <br>
+            </div>
+            <div>         
             <input type="checkbox" id="condiciones" name="condiciones" value="condiciones">
             <label for="condiciones"> Acepto los términos y condiciones de uso de mis datos.</label>
+            </div>
             <br><br>
             <textarea name="textarea" rows="10" cols="35">Mensaje</textarea>
             <input id= "submit" type="submit" value="Enviar">
@@ -62,9 +64,7 @@
         </form>
     </article>
 
-   </section>
-
-    
+   </section>   
     <footer>
 
         <div id="redes_sociales">
@@ -80,6 +80,7 @@
         <li><a href="#">Accesibilidad</a></li>
         <li><a href="#">Condiciones</a></li>
         </ul> 
-    </footer>  
+    </footer> 
+    <script src="../scriptcontact.js"></script>
 </body>
 </html>
